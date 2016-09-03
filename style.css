@@ -3506,17 +3506,17 @@ i span { margin-left: 6px;}
 	
 }
 /* STYLES FOR SEARCH INPUT*/
-input[type=search] {
+.search_form > input[type=text]{
     border: solid 5px #ccc;
     padding: 7px 10px 7px 20px;
-    width: 100px;
+    width: 140px;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
 }
 
-input[type=search]:focus {
-    width: 240px;
+.search_form > input[type=text]:focus {
+    width: 232px;
     border: 5px solid #f18d06;
     background-color: #ffffff;
     outline: none;
