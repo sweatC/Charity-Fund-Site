@@ -37,8 +37,10 @@
 		<div id="primary" class="grid_11 suffix_1">
 			<?php get_template_part('content', 'page' ); ?>
 		</div><!-- #content -->
-		
-		<?php get_sidebar('page'); ?>
+
+		 <?php
+             get_sidebar('page');
+		  ?>
 
 		<div class="clear"></div>
 	</div><!-- #primary -->
