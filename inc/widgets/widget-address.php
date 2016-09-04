@@ -103,7 +103,7 @@ class wplook_address_widget extends WP_Widget {
 			
 
 			<p>
-				<label for="<?php echo $this->get_field_id('phone'); ?>"> <?php _e('Phone:', 'charitas'); ?> </label>
+				<label for="<?php echo $this->get_field_id('phone'); ?>"> <?php _e('Телефон:', 'charitas'); ?> </label>
 				<input class="widefat" id="<?php echo $this->get_field_id('phone'); ?>" name="<?php echo $this->get_field_name('phone'); ?>" type="text" value="<?php echo $phone; ?>" />
 				<p style="font-size: 10px; color: #999; margin: -10px 0 0 0px; padding: 0px;"> <?php _e('Add Phone Number', 'charitas'); ?></p>
 			</p>
@@ -175,11 +175,11 @@ class wplook_address_widget extends WP_Widget {
 					<?php } ?>
 				</p>
 				<?php if ( $phone ){ ?>
-					<b><?php _e('Phone:', 'charitas'); ?></b><span class="tel"> <?php echo $phone; ?></span><br />
+					<b><?php _e('Телефон:', 'charitas'); ?></b><span class="tel"> <?php echo $phone; ?></span><br />
 				<?php } ?>
 
 				<?php if ( $email ){ ?>
-					<b><?php _e('E-mail:', 'charitas'); ?></b><span class="email"> <?php echo $email; ?></span><br />
+					<b><?php _e('Почта:', 'charitas'); ?></b><span class="email"> <?php echo $email; ?></span><br />
 				<?php } ?>
 
 				<?php if ( $website ){ ?>	

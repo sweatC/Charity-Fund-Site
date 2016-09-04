@@ -35,29 +35,35 @@
 
 
 					<ul class="tb-list">
-						<?php if ( ot_get_option('charitas_phone_number') == "") { ?>
-							<li class="phone"><a href="tel:<?php echo esc_html(ot_get_option('charitas_phone_number') ) ?>" ><?php _e('Тел.:+38 067-472-10-94', 'charitas'); ?><?php echo esc_html(ot_get_option('charitas_phone_number') ) ?></a></li>
+
+						<?php if ( ot_get_option('charitas_phone_number') == "") { ?><!--<a href="tel:<?php echo esc_html(ot_get_option('charitas_phone_number') ) ?>" >-->
+							<li class="phone"><a><?php _e('Тел.:+38 067-472-10-94', 'charitas'); ?><?php echo esc_html(ot_get_option('charitas_phone_number') ) ?></a></li>
 						<?php } ?>
 
+                        <?php if ( ot_get_option('charitas_facebook') == "") { ?>
+                            <li class="contact"><a target="_blank" href="https://www.facebook.com/clinic1.odessa.ua"><i class="icon-facebook"></i></a></li>
+                        <?php } ?>
+
+                        <?php if ( ot_get_option('charitas_instagram') == "") { ?>
+                            <li class="contact"><a href="#"><i class="icon-instagram"></i></a></li>
+                        <?php } ?>
+
+
+
+
+                        <!--   SOCIAL NETWORKS NO MORE -->
 						<!--<?php if ( ot_get_option('charitas_rss_link') == "") { ?>
-							<li class="rss"><a href="<?php echo esc_url(ot_get_option('charitas_rss_link') )?>"><i class="icon-feed2"></i></a></li>-->
-						<?php } ?>
-						<!-   SOCIAL NETWORKS-->
-						<?php if ( ot_get_option('charitas_facebook') == "") { ?>
-							<li class="contact"><a href="https://www.facebook.com/clinic1.odessa.ua"><i class="icon-facebook"></i></a></li>
-						<?php } ?>
-
-						<?php if ( ot_get_option('charitas_twitter') == "") { ?>
+							<li class="rss"><a href="<?php echo esc_url(ot_get_option('charitas_rss_link') )?>"><i class="icon-feed2"></i></a></li>
+                            <?php if ( ot_get_option('charitas_twitter') == "") { ?>
 							<li class="contact"><a href="#"><i class="icon-twitter"></i></a></li>
 						<?php } ?>
-
-						<?php if ( ot_get_option('charitas_instagram') == "") { ?>
-							<li class="contact"><a href="#"><i class="icon-instagram"></i></a></li>
 						<?php } ?>
+                            <?php if ( ot_get_option('charitas_contact_email') == "") { ?>
+                            <li class="contact"><a href="mailto:charity@clinic1.odessa.ua?subject=Напишите тему пожалуйста"><i class="icon-envelope"></i></a></li>
+                        <?php } ?>-->
 
-						<?php if ( ot_get_option('charitas_contact_email') == "") { ?>
-							<li class="contact"><a href="mailto:charity@clinic1.odessa.ua"><i class="icon-envelope"></i></a></li>
-						<?php } ?>
+
+
 						
 						<?php if ( ot_get_option('charitas_group_icons') != "off") { ?>
 										
@@ -85,10 +91,10 @@
 
 						<?php if ( ot_get_option('charitas_search_form') != "on") { ?>
 									<li class="search"></li>
-						<?php } ?>
+						<?php } ?><!--echo esc_url(ot_get_option('charitas_donete_link') )-->
 
 						<!--<?php if ( ot_get_option('charitas_donete_link') != "") { ?><?php } ?>-->
-							<li class="donate"><a href="<?php echo esc_url(ot_get_option('charitas_donete_link') ) ?>"><?php _e('Помочь', 'charitas'); ?> <i class="icon-heart"></i></a></li>
+							<li class="donate"><a href="<?php  echo get_page_link(73); ?>"><?php _e('Помочь', 'charitas'); ?> <i class="icon-heart"></i></a></li>
 						
 
 					</ul>
