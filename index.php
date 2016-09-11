@@ -33,7 +33,7 @@
 <div id="main" class="site-main container_16">
 	<div class="inner">
 		<div id="primary" class="grid_11 suffix_1">
-			<?php if ( is_home() ) { ?>
+			<?php if ( is_home()  ) { ?>
 				<div class="widget-title">
 					<h3><?php _e('Последние новости', 'charitas'); ?></h3>
 					<div class="clear"></div>
@@ -49,7 +49,7 @@
 					<?php get_template_part( 'content', 'none' ); ?>
 			<?php endif; ?>
 
-			<?php charitas_content_navigation('postnav' ) ?>
+			<?php charitas_content_navigation('postnav' ); ?>
 		</div>
 		<?php get_sidebar(); ?>
 		<div class="clear"></div>

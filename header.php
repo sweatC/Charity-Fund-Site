@@ -93,8 +93,8 @@
 									<li class="search"></li>
 						<?php } ?><!--echo esc_url(ot_get_option('charitas_donete_link') )-->
 
-						<!--<?php if ( ot_get_option('charitas_donete_link') != "") { ?><?php } ?>-->
-							<li class="donate"><a href="<?php  echo get_page_link(73); ?>"><?php _e('Помочь', 'charitas'); ?> <i class="icon-heart"></i></a></li>
+						<!--<?php if ( ot_get_option('charitas_donete_link') != "") { ?><?php } ?>get_page_link(73);-->
+							<li class="donate"><a target="_blank" href="https://makingtheworldbetter.payplug.in/"><?php _e('Помочь', 'charitas'); ?> <i class="icon-heart"></i></a></li>
 						
 
 					</ul>
