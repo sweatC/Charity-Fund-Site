@@ -68,8 +68,3 @@ The home page is buided from 4 widget areas. Set the size for all widgets.
 The theme has 2 custom templates:
 1. Home page template - To display custom widgets on home page
 2. Contact Page Template - To display the contact form.
-
-## Header Image - The image source is https://unsplash.com and it's under GPL licence.
-UNSPLASH LICENSE
-
-All photos published on Unsplash are licensed under Creative Commons Zero which means you can copy, modify, distribute and use the photos for free, including commercial purposes, without asking permission from or providing attribution to the photographer or Unsplash.
